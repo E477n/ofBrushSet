@@ -10,16 +10,17 @@ obj/osx/Release/src/ofApp.o: \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/filesystem/config.hpp \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/config.hpp \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/config/user.hpp \
-  /Users/merestnora/Documents/of10/libs/boost/include/boost/config/select_compiler_config.hpp \
+  /Users/merestnora/Documents/of10/libs/boost/include/boost/config/detail/select_compiler_config.hpp \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/config/compiler/clang.hpp \
-  /Users/merestnora/Documents/of10/libs/boost/include/boost/config/select_stdlib_config.hpp \
+  /Users/merestnora/Documents/of10/libs/boost/include/boost/config/detail/select_stdlib_config.hpp \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/config/stdlib/libcpp.hpp \
-  /Users/merestnora/Documents/of10/libs/boost/include/boost/config/select_platform_config.hpp \
+  /Users/merestnora/Documents/of10/libs/boost/include/boost/config/detail/select_platform_config.hpp \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/config/platform/macos.hpp \
-  /Users/merestnora/Documents/of10/libs/boost/include/boost/config/posix_features.hpp \
-  /Users/merestnora/Documents/of10/libs/boost/include/boost/config/suffix.hpp \
+  /Users/merestnora/Documents/of10/libs/boost/include/boost/config/detail/posix_features.hpp \
+  /Users/merestnora/Documents/of10/libs/boost/include/boost/config/detail/suffix.hpp \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/system/api_config.hpp \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/detail/workaround.hpp \
+  /Users/merestnora/Documents/of10/libs/boost/include/boost/config/workaround.hpp \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/config/auto_link.hpp \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/filesystem/path.hpp \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/filesystem/path_traits.hpp \
@@ -52,6 +53,8 @@ obj/osx/Release/src/ofApp.o: \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/predef/platform/windows_store.h \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/predef/platform/windows_phone.h \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/predef/platform/windows_runtime.h \
+  /Users/merestnora/Documents/of10/libs/boost/include/boost/predef/platform/ios.h \
+  /Users/merestnora/Documents/of10/libs/boost/include/boost/predef/os/ios.h \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/cstdint.hpp \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/assert.hpp \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/noncopyable.hpp \
@@ -349,7 +352,6 @@ obj/osx/Release/src/ofApp.o: \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/predef/os/beos.h \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/predef/os/bsd.h \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/predef/os/macos.h \
-  /Users/merestnora/Documents/of10/libs/boost/include/boost/predef/os/ios.h \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/predef/detail/os_detected.h \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/predef/os/bsd/bsdi.h \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/predef/os/bsd/dragonfly.h \
@@ -380,6 +382,8 @@ obj/osx/Release/src/ofApp.o: \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/predef/hardware/simd/ppc/versions.h \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/predef/version.h \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/smart_ptr/detail/operator_bool.hpp \
+  /Users/merestnora/Documents/of10/libs/boost/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
+  /Users/merestnora/Documents/of10/libs/boost/include/boost/smart_ptr/detail/local_counted_base.hpp \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/io/detail/quoted_manip.hpp \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/io/ios_state.hpp \
   /Users/merestnora/Documents/of10/libs/boost/include/boost/io_fwd.hpp \
@@ -439,6 +443,7 @@ obj/osx/Release/src/ofApp.o: \
   /Users/merestnora/Documents/of10/libs/glm/include/glm/vec3.hpp \
   /Users/merestnora/Documents/of10/libs/glm/include/glm/detail/type_vec3.hpp \
   /Users/merestnora/Documents/of10/libs/glm/include/glm/detail/type_vec3.inl \
+  /Users/merestnora/Documents/of10/libs/openFrameworks/types/ofRectangle.h \
   /Users/merestnora/Documents/of10/libs/openFrameworks/types/ofColor.h \
   /Users/merestnora/Documents/of10/libs/glm/include/glm/common.hpp \
   /Users/merestnora/Documents/of10/libs/glm/include/glm/detail/func_common.hpp \
@@ -460,7 +465,6 @@ obj/osx/Release/src/ofApp.o: \
   /Users/merestnora/Documents/of10/libs/openFrameworks/graphics/ofGraphicsBaseTypes.h \
   /Users/merestnora/Documents/of10/libs/openFrameworks/graphics/ofGraphicsConstants.h \
   /Users/merestnora/Documents/of10/libs/openFrameworks/types/ofTypes.h \
-  /Users/merestnora/Documents/of10/libs/openFrameworks/types/ofRectangle.h \
   /Users/merestnora/Documents/of10/libs/openFrameworks/types/ofParameterGroup.h \
   /Users/merestnora/Documents/of10/libs/openFrameworks/math/ofMath.h \
   /Users/merestnora/Documents/of10/libs/glm/include/glm/gtc/constants.hpp \
@@ -843,25 +847,27 @@ obj/osx/Release/src/ofApp.o: \
 
 /Users/merestnora/Documents/of10/libs/boost/include/boost/config/user.hpp:
 
-/Users/merestnora/Documents/of10/libs/boost/include/boost/config/select_compiler_config.hpp:
+/Users/merestnora/Documents/of10/libs/boost/include/boost/config/detail/select_compiler_config.hpp:
 
 /Users/merestnora/Documents/of10/libs/boost/include/boost/config/compiler/clang.hpp:
 
-/Users/merestnora/Documents/of10/libs/boost/include/boost/config/select_stdlib_config.hpp:
+/Users/merestnora/Documents/of10/libs/boost/include/boost/config/detail/select_stdlib_config.hpp:
 
 /Users/merestnora/Documents/of10/libs/boost/include/boost/config/stdlib/libcpp.hpp:
 
-/Users/merestnora/Documents/of10/libs/boost/include/boost/config/select_platform_config.hpp:
+/Users/merestnora/Documents/of10/libs/boost/include/boost/config/detail/select_platform_config.hpp:
 
 /Users/merestnora/Documents/of10/libs/boost/include/boost/config/platform/macos.hpp:
 
-/Users/merestnora/Documents/of10/libs/boost/include/boost/config/posix_features.hpp:
+/Users/merestnora/Documents/of10/libs/boost/include/boost/config/detail/posix_features.hpp:
 
-/Users/merestnora/Documents/of10/libs/boost/include/boost/config/suffix.hpp:
+/Users/merestnora/Documents/of10/libs/boost/include/boost/config/detail/suffix.hpp:
 
 /Users/merestnora/Documents/of10/libs/boost/include/boost/system/api_config.hpp:
 
 /Users/merestnora/Documents/of10/libs/boost/include/boost/detail/workaround.hpp:
+
+/Users/merestnora/Documents/of10/libs/boost/include/boost/config/workaround.hpp:
 
 /Users/merestnora/Documents/of10/libs/boost/include/boost/config/auto_link.hpp:
 
@@ -926,6 +932,10 @@ obj/osx/Release/src/ofApp.o: \
 /Users/merestnora/Documents/of10/libs/boost/include/boost/predef/platform/windows_phone.h:
 
 /Users/merestnora/Documents/of10/libs/boost/include/boost/predef/platform/windows_runtime.h:
+
+/Users/merestnora/Documents/of10/libs/boost/include/boost/predef/platform/ios.h:
+
+/Users/merestnora/Documents/of10/libs/boost/include/boost/predef/os/ios.h:
 
 /Users/merestnora/Documents/of10/libs/boost/include/boost/cstdint.hpp:
 
@@ -1521,8 +1531,6 @@ obj/osx/Release/src/ofApp.o: \
 
 /Users/merestnora/Documents/of10/libs/boost/include/boost/predef/os/macos.h:
 
-/Users/merestnora/Documents/of10/libs/boost/include/boost/predef/os/ios.h:
-
 /Users/merestnora/Documents/of10/libs/boost/include/boost/predef/detail/os_detected.h:
 
 /Users/merestnora/Documents/of10/libs/boost/include/boost/predef/os/bsd/bsdi.h:
@@ -1582,6 +1590,10 @@ obj/osx/Release/src/ofApp.o: \
 /Users/merestnora/Documents/of10/libs/boost/include/boost/predef/version.h:
 
 /Users/merestnora/Documents/of10/libs/boost/include/boost/smart_ptr/detail/operator_bool.hpp:
+
+/Users/merestnora/Documents/of10/libs/boost/include/boost/smart_ptr/detail/local_sp_deleter.hpp:
+
+/Users/merestnora/Documents/of10/libs/boost/include/boost/smart_ptr/detail/local_counted_base.hpp:
 
 /Users/merestnora/Documents/of10/libs/boost/include/boost/io/detail/quoted_manip.hpp:
 
@@ -1701,6 +1713,8 @@ obj/osx/Release/src/ofApp.o: \
 
 /Users/merestnora/Documents/of10/libs/glm/include/glm/detail/type_vec3.inl:
 
+/Users/merestnora/Documents/of10/libs/openFrameworks/types/ofRectangle.h:
+
 /Users/merestnora/Documents/of10/libs/openFrameworks/types/ofColor.h:
 
 /Users/merestnora/Documents/of10/libs/glm/include/glm/common.hpp:
@@ -1742,8 +1756,6 @@ obj/osx/Release/src/ofApp.o: \
 /Users/merestnora/Documents/of10/libs/openFrameworks/graphics/ofGraphicsConstants.h:
 
 /Users/merestnora/Documents/of10/libs/openFrameworks/types/ofTypes.h:
-
-/Users/merestnora/Documents/of10/libs/openFrameworks/types/ofRectangle.h:
 
 /Users/merestnora/Documents/of10/libs/openFrameworks/types/ofParameterGroup.h:
 

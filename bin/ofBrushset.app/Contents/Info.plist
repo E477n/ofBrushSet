@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
   <key>CFBundleGetInfoString</key>
-  <string>ofBrushset.app</string>
+  <string>ofBrushSet.app</string>
   <key>CFBundleExecutable</key>
-  <string>ofBrushset</string>
+  <string>ofBrushSet</string>
   <key>CFBundleIdentifier</key>
   <string>com.your-company-name.www</string>
   <key>CFBundleName</key>
-  <string>ofBrushset</string>
+  <string>ofBrushSet</string>
   <key>CFBundleShortVersionString</key>
   <string>0.01</string>
   <key>CFBundleInfoDictionaryVersion</key>
