@@ -3,79 +3,50 @@
 
 ofLight light;
 ofEasyCam cam;
+
+ofNode baseNode;
+ofNode childNode;
+ofNode grandChildNode;
+ofPolyline line;
+
 //--------------------------------------------------------------
 void ofApp::setup(){
-  ofBackground(227, 232, 235);
+  ofBackground(0);
+  //ofBackground(0, 0, 0);
   ofSetBackgroundAuto(false);
-  ofSetFrameRate(12);
+  //ofSetFrameRate(12);
   light.setup();
   light.setPosition(-100, 200,0);
+
   ofEnableDepthTest();
+  baseNode.setPosition(0, 0, 0);
+  childNode.setParent(baseNode);
+  childNode.setPosition(0, 0, 200);
+  grandChildNode.setParent(childNode);
+  grandChildNode.setPosition(0, 50, 0);
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
+  baseNode.pan(1);
+  childNode.tilt(3);
 
-}
-
-//--------------------------------------------------------------
-void brush_test(){
-  ofSetRectMode(OF_RECTMODE_CENTER);
-  int numRects = 10;
-  for (int r=0; r<numRects; r++) {
-      ofSetColor(ofRandom(50, 255), ofRandom(200, 255), ofRandom(200, 255));
-      float width = ofRandom(.5, 3);
-      float height = ofRandom(.5, 3);
-      float distance = ofRandom(15);
-
-      float angle = ofRandom(ofDegToRad(360.0));
-
-      float xOffset = cos(angle)*distance;
-      float yOffset = sin(angle)*distance;
-      ofDrawRectangle(ofGetMouseX()+xOffset, ofGetMouseY()+yOffset, width, height);
-    }
-}
-
-//bursh inspired by Wassily Kandinsky
-void brush_wk(){
-  //define colorset, later could be replaced by automated canvas color slurping
-  // int colorNum = 3;
-  // int** wk_colors = new int*[colorNum];
-  // for(int i = 0; i < colorNum; ++i)
-  //   //rgb
-  //   a[i] = new int[2];
-  int wk_colors[2][3] = {
-    {179, 27, 23},
-    {122, 172, 183}
-  };
-  //object number
-  int numEllis = ofRandom(0, 2);
-  for (int i=0; i<numEllis; i++){
-    int r = ofRandom(0, 2);
-
-    float raduis = ofRandom(25, 75);
-    float distance = ofRandom(150);
-    float angle = ofRandom(ofDegToRad(360.0));
-
-    float xOffset = cos(angle)*distance;
-    float yOffset = sin(angle)*distance;
-    ofFill();
-    ofSetColor(wk_colors[r][0], wk_colors[r][1], wk_colors[r][2]);
-    ofDrawCircle(ofGetMouseX()+xOffset, ofGetMouseY()+yOffset, raduis);
-    ofNoFill();
-    ofSetColor(0, 0, 0);
-    ofDrawCircle(ofGetMouseX()+xOffset, ofGetMouseY()+yOffset, raduis);
+  line.addVertex(grandChildNode.getGlobalPosition());
+  if(line.size() > 200){
+    line.getVertices().erase(line.getVertices().begin());
   }
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
   cam.begin();
-    if (ofGetMousePressed(OF_MOUSE_BUTTON_LEFT)){  // If the left mouse button is pressed...
-        brush_wk();
-    }
+    // baseNode.draw();
+    // childNode.draw();
+    // grandChildNode.draw();
+    ofSetColor(255, ofRandom(150, 220), ofRandom(150, 230));
+    line.draw();
     if (ofGetMousePressed(OF_MOUSE_BUTTON_RIGHT)){
-      ofBackground(255);
+      ofBackground(0);
     }
   cam.end();
 }
@@ -97,12 +68,14 @@ void ofApp::mouseMoved(int x, int y ){
 
 //--------------------------------------------------------------
 void ofApp::mouseDragged(int x, int y, int button){
-
+  ofPoint pt;
+  pt.set(x, y);
+  line.addVertex(pt);
 }
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-
+  line.clear();
 }
 
 //--------------------------------------------------------------

@@ -825,7 +825,9 @@ obj/osx/Release/src/main.o: \
   /Users/merestnora/Documents/of10/libs/openFrameworks/3d/of3dUtils.h \
   /Users/merestnora/Documents/of10/libs/openFrameworks/3d/ofCamera.h \
   /Users/merestnora/Documents/of10/libs/openFrameworks/3d/ofEasyCam.h \
-  /Users/merestnora/Documents/of10/apps/myApps/ofBrushSet/src/ofApp.h
+  /Users/merestnora/Documents/of10/apps/myApps/ofBrushSet/src/ofApp.h \
+  /Users/merestnora/Documents/of10/apps/myApps/ofBrushSet/src/brushParticle.h \
+  /Users/merestnora/Documents/of10/apps/myApps/ofBrushSet/src/brushWK.h
 
 /Users/merestnora/Documents/of10/libs/openFrameworks/ofMain.h:
 
@@ -2478,3 +2480,7 @@ obj/osx/Release/src/main.o: \
 /Users/merestnora/Documents/of10/libs/openFrameworks/3d/ofEasyCam.h:
 
 /Users/merestnora/Documents/of10/apps/myApps/ofBrushSet/src/ofApp.h:
+
+/Users/merestnora/Documents/of10/apps/myApps/ofBrushSet/src/brushParticle.h:
+
+/Users/merestnora/Documents/of10/apps/myApps/ofBrushSet/src/brushWK.h:

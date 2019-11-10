@@ -1,5 +1,7 @@
 #include "ofMain.h"
 #include "ofApp.h"
+#include "brushParticle.h"
+#include "brushWK.h"
 
 //========================================================================
 int main( ){
