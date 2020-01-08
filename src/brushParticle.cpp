@@ -16,12 +16,12 @@ void brushParticle::update(){
 //--------------------------------------------------------------
 void brushTest(){
   ofSetRectMode(OF_RECTMODE_CENTER);
-  int numRects = 10;
+  int numRects = 30;
   for (int r=0; r<numRects; r++) {
-      ofSetColor(ofRandom(50, 255), ofRandom(200, 255), ofRandom(200, 255));
-      float width = ofRandom(.5, 3);
-      float height = ofRandom(.5, 3);
-      float distance = ofRandom(15);
+      ofSetColor(ofRandom(50, 255), ofRandom(50, 255), ofRandom(200, 255));
+      float width = ofRandom(.5, 4);
+      float height = ofRandom(.5, 4);
+      float distance = ofRandom(30);
 
       float angle = ofRandom(ofDegToRad(360.0));
 
