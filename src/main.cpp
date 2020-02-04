@@ -2,6 +2,7 @@
 #include "ofApp.h"
 #include "brushParticle.h"
 #include "brushWK.h"
+#include "audioTest.h"
 
 //========================================================================
 int main( ){
@@ -13,5 +14,5 @@ int main( ){
 	// this kicks off the running of my app
 	// can be OF_WINDOW or OF_FULLSCREEN
 	// pass in width and height too:
-	ofRunApp(new brushParticle());
+	ofRunApp(new audioTest());
 }

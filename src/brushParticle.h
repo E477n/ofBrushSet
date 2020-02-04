@@ -22,4 +22,5 @@ class brushParticle : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 
+		void brushTest();
 };

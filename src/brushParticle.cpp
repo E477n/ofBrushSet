@@ -14,7 +14,7 @@ void brushParticle::update(){
 }
 
 //--------------------------------------------------------------
-void brushTest(){
+void brushParticle::brushTest(){
   ofSetRectMode(OF_RECTMODE_CENTER);
   int numRects = 30;
   for (int r=0; r<numRects; r++) {
